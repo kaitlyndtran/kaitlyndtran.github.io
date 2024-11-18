@@ -66,6 +66,22 @@
 	</header>
 	<!-- header section end -->
 
+	<!-- password pop up -->
+	<script>
+        let password = "ktux2024";
+        (function passcodeProtect() {
+            let passcode = prompt("Password:");
+            while (passcode !== password) {
+                alert("Incorrect passcode");
+                return passcodeProtect();
+            }
+        }());
+        alert('Success');
+        document.getElementById("container")
+            .style.display = "block";
+    	</script>
+	<!-- password pop up -->
+	
 	<!-- intro section start -->
 	<section class="intro-section">
 		<div class="container text-center">
